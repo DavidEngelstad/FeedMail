@@ -1,0 +1,26 @@
+{
+  "name": "feedmail",
+  "version": "1.0.0",
+  "description": "An Application designed to gather survey data from users",
+  "main": "index.js",
+  "engines": {
+    "node": "11.10.1",
+    "npm": "6.7.0"
+  },
+  "scripts": {
+    "start": "node ./server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidEngelstad/FeedMail.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidEngelstad/FeedMail/issues"
+  },
+  "homepage": "https://github.com/DavidEngelstad/FeedMail#readme",
+  "dependencies": {
+    "express": "^4.17.0"
+  }
+}
