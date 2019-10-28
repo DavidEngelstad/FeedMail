@@ -1,3 +1,3 @@
 # FeedMail
 
-An Application designed to gather survey data from users
+An application designed to request and collect survey data from users
