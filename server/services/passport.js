@@ -26,7 +26,6 @@ passport.use(
       let user = await User.findOne({ googleId: profile.id })
       if (!user) {
         user = await new User({ googleId: profile.id }).save()
-        console.log(user);
       }
       done(null, user);
     }
