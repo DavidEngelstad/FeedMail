@@ -5,8 +5,10 @@ const bodyParser = require('body-parser');
 const cookieSession = require('cookie-session');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const keys = require('./config/keys');
-require('./models/User')
+require('./models/User');
+require('./models/Survey');
 require('./services/passport');
+
 
 
 const PORT = process.env.PORT || 5000;
@@ -28,6 +30,7 @@ app.use(passport.session());
 
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
+require('./routes/surveyRoutes');
 
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
